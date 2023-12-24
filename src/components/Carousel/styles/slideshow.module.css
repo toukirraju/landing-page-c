@@ -1,0 +1,11 @@
+.mySwipers {
+  /* padding-bottom: 33px; */
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #2aa7df !important;
+  width: 24px;
+  height: 6px;
+  border-radius: 4px;
+}

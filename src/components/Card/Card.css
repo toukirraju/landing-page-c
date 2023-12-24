@@ -1,0 +1,49 @@
+.blob-card {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  background-color: #dcf6f8bb;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blob {
+  animation: rotate360 20s infinite;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  filter: blur(calc(200px / 2.15));
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the blob */
+  pointer-events: none; /* Allow mouse events to go through the blob element */
+}
+
+.blob-blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+
+.card-content {
+  z-index: 3;
+  position: relative;
+  padding: 20px;
+  color: #505050;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(1, 1.15);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
